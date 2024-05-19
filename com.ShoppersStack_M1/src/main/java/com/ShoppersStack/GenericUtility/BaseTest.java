@@ -61,11 +61,11 @@ public class BaseTest {
 	public void bc() throws IOException {
 		System.out.println("BeforeClass");
 
-		String browser = file.readPropertyData("browser");
-		String url = file.readPropertyData("url");
+//		String browser = file.readPropertyData("browser");
+//		String url = file.readPropertyData("url");
 		
-//		String url = System.getProperty("url");
-//		String browser = System.getProperty("browser");
+		String url = System.getProperty("url");
+		String browser = System.getProperty("browser");
 		
 
 		if (browser.contains("chrome")) {
